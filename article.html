@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkNews — Статья</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">DarkNews</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="world.html">Мир</a></li>
+                    <li><a href="business.html">Бизнес</a></li>
+                    <li><a href="tech.html">Технологии</a></li>
+                    <li><a href="sport.html">Спорт</a></li>
+                    <li><a href="politics.html">Политика</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 900px; margin: 50px auto;">
+
+        <img id="article-image" src="" alt="" style="width:100%; border-radius:16px; margin-bottom:30px;">
+
+        <span id="article-category" style="color:#e30613; font-size:18px; font-weight:600;"></span>
+        
+        <h1 id="article-title" style="font-size:2.8rem; margin:20px 0 40px; line-height:1.3;"></h1>
+
+        <div id="article-content" style="font-size:1.2rem; line-height:1.85; color:#ddd;">
+            <p>Полный текст новости будет здесь.</p>
+            <p>В реальном проекте сюда вставляется большая статья с дополнительными фотографиями, видео, цитатами и комментариями.</p>
+            <p>Дата публикации: 17 апреля 2026 года</p>
+        </div>
+
+        <a href="index.html" style="display:inline-block; margin-top:50px; color:#e30613; font-size:18px; text-decoration:none;">
+            ← Вернуться на главную
+        </a>
+
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        
+        const title = params.get('title');
+        const category = params.get('category');
+        const image = params.get('image');
+
+        if (title) document.getElementById('article-title').textContent = decodeURIComponent(title);
+        if (category) document.getElementById('article-category').textContent = decodeURIComponent(category);
+        if (image) document.getElementById('article-image').src = decodeURIComponent(image);
+    </script>
+
+</body>
+</html>

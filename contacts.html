@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkNews — Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">DarkNews</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="world.html" class="nav-link">Мир</a></li>
+                    <li><a href="business.html" class="nav-link">Бизнес</a></li>
+                    <li><a href="tech.html" class="nav-link">Технологии</a></li>
+                    <li><a href="sport.html" class="nav-link">Спорт</a></li>
+                    <li><a href="politics.html" class="nav-link">Политика</a></li>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav-link active">Контакты</a></li>
+                </ul>
+                <input type="text" id="search-input" placeholder="Поиск новостей..." class="search-input">
+            </div>
+        </nav>
+
+        <div class="breaking-news">
+            <div class="container">
+                <span id="ticker">Казахстан и Китай подписали соглашение на $12 млрд • Цена нефти превысила $93,40 • В Алматы открылся новый IT-технопарк</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 1000px; margin: 80px auto;">
+
+        <h1 style="text-align: center; font-size: 42px; margin-bottom: 20px;">Контакты</h1>
+        <p style="text-align: center; font-size: 18px; color: #bbbbbb; max-width: 700px; margin: 0 auto 70px;">
+            Мы всегда на связи. Напишите нам — ответим в ближайшее время.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+            <div>
+                <h2 style="color: #e30613; margin-bottom: 30px;">Наши контакты</h2>
+                
+                <div style="background: #1a1a1a; padding: 35px; border-radius: 16px; margin-bottom: 30px;">
+                    <p style="margin-bottom: 20px;"><strong>Адрес:</strong><br>
+                    г. Алматы, ул. Абая, 150, БЦ «Alatau», офис 312</p>
+                    
+                    <p style="margin-bottom: 20px;"><strong>Телефон:</strong><br>
+                    +7 (778) 460-62-97<br></p>
+                    
+                    <p style="margin-bottom: 20px;"><strong>Email:</strong><br>
+                    <a href="mailto:info@darknews.kz" style="color: #e30613;">info@darknews.kz</a><br>
+                    <a href="mailto:editor@darknews.kz" style="color: #e30613;">editor@darknews.kz</a></p>
+                    
+                    <p><strong>Время работы редакции:</strong><br>
+                    09:00 — 20:00 (по времени Алматы)</p>
+                </div>
+
+                <h3 style="margin-bottom: 15px;">Социальные сети</h3>
+                <p style="font-size: 17px;">
+                    Instagram: <a href="#" style="color: #e30613;">@darknews.kz</a><br>
+                    Telegram: <a href="#" style="color: #e30613;">t.me/darknews_kz</a><br>
+                    YouTube: <a href="#" style="color: #e30613;">DarkNews Kazakhstan</a>
+                </p>
+            </div>
+            <div>
+                <h2 style="color: #e30613; margin-bottom: 30px;">Напишите нам</h2>
+                
+                <form style="background: #1a1a1a; padding: 40px; border-radius: 16px;">
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px;">Ваше имя</label>
+                        <input type="text" placeholder="Введите ваше имя" style="width: 100%; padding: 14px; background: #222; border: 1px solid #444; border-radius: 8px; color: white;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px;">Email</label>
+                        <input type="email" placeholder="Ваш email" style="width: 100%; padding: 14px; background: #222; border: 1px solid #444; border-radius: 8px; color: white;">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="display: block; margin-bottom: 8px;">Тема сообщения</label>
+                        <input type="text" placeholder="Тема" style="width: 100%; padding: 14px; background: #222; border: 1px solid #444; border-radius: 8px; color: white;">
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <label style="display: block; margin-bottom: 8px;">Сообщение</label>
+                        <textarea placeholder="Напишите ваше сообщение..." rows="8" style="width: 100%; padding: 14px; background: #222; border: 1px solid #444; border-radius: 8px; color: white; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="button" style="width: 100%; padding: 16px; background: #e30613; color: white; border: none; border-radius: 8px; font-size: 17px; font-weight: 600; cursor: pointer;">
+                        Отправить сообщение
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 90px;">
+            <a href="index.html" style="color: #e30613; font-size: 18px; text-decoration: none;">
+                ← Вернуться на главную страницу
+            </a>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

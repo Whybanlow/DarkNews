@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkNews — Бизнес</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">DarkNews</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="world.html" class="nav-link">Мир</a></li>
+                    <li><a href="business.html" class="nav-link active">Бизнес</a></li>
+                    <li><a href="tech.html" class="nav-link">Технологии</a></li>
+                    <li><a href="sport.html" class="nav-link">Спорт</a></li>
+                    <li><a href="politics.html" class="nav-link">Политика</a></li>
+                </ul>
+                <input type="text" id="search-input" placeholder="Поиск новостей..." class="search-input">
+            </div>
+        </nav>
+        <div class="breaking-news">
+            <div class="container">
+                <span id="ticker">Цена нефти Brent превысила $93,40 • Halyk Bank показал рекордную прибыль • Tesla рассматривает строительство завода в Казахстане • Тенге укрепился на 1,8%</span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <img src="https://picsum.photos/id/201/1600/900" alt="Главная бизнес новость" class="hero-img">
+            <div class="hero-overlay">
+                <div class="hero-category">БИЗНЕС</div>
+                <h1 class="hero-title">Цена нефти Brent превысила $93,40 за баррель впервые за 8 месяцев</h1>
+                <p class="hero-desc">Рост цен вызван геополитической напряжённостью на Ближнем Востоке и решением ОПЕК+ о дополнительном сокращении добычи.</p>
+                <a href="#" class="read-more">Читать полностью →</a>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section-title">Главные новости бизнеса</h2>
+            <div class="news-grid">
+                <div class="news-card" data-title="Цена нефти Brent превысила $93,40" data-category="Нефть" data-image="https://picsum.photos/id/201/680/420">
+                    <img src="https://picsum.photos/id/201/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Нефть и Газ</span>
+                        <h3>Цена нефти Brent превысила $93,40 за баррель</h3>
+                        <p>Рост цен связан с эскалацией конфликта на Ближнем Востоке и сокращением добычи ОПЕК+.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Рекордная прибыль Halyk Bank" data-category="Банки" data-image="https://picsum.photos/id/133/680/420">
+                    <img src="https://picsum.photos/id/133/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Банки</span>
+                        <h3>Halyk Bank сообщил о рекордной чистой прибыли за 2025 год</h3>
+                        <p>Прибыль банка выросла на 28% по сравнению с предыдущим годом и достигла исторического максимума.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Tesla в Казахстане" data-category="Авто" data-image="https://picsum.photos/id/870/680/420">
+                    <img src="https://picsum.photos/id/870/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Автомобили</span>
+                        <h3>Tesla рассматривает строительство завода в Казахстане</h3>
+                        <p>Компания ведёт переговоры о строительстве Gigafactory в районе Алматы или Астаны.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Укрепление тенге" data-category="Финансы" data-image="https://picsum.photos/id/251/680/420">
+                    <img src="https://picsum.photos/id/251/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Валюта</span>
+                        <h3>Тенге укрепился на 1,8% благодаря росту цен на нефть</h3>
+                        <p>Национальный банк сохранил базовую ставку на уровне 14,5%.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Apple представила MacBook Pro" data-category="Технологии" data-image="https://picsum.photos/id/1015/680/420">
+                    <img src="https://picsum.photos/id/1015/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Технологии</span>
+                        <h3>Apple представила новые MacBook Pro с чипом M5</h3>
+                        <p>Ноутбуки получили мощный процессор и значительно увеличенное время работы от батареи.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Samsung новые складные смартфоны" data-category="Гаджеты" data-image="https://picsum.photos/id/201/680/420">
+                    <img src="https://picsum.photos/id/201/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Гаджеты</span>
+                        <h3>Samsung анонсировала Galaxy Z Fold7 и Z Flip7</h3>
+                        <p>Новые складные смартфоны получили улучшенные экраны и камеры.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="two-columns">
+            <section class="section">
+                <h2 class="section-title">Финансовые рынки</h2>
+                <div class="news-grid small-grid">
+                    <div class="news-card" data-title="Рост акций Halyk Bank" data-category="Фондовый рынок" data-image="https://picsum.photos/id/133/680/420">
+                        <img src="https://picsum.photos/id/133/680/420" alt="">
+                        <div class="card-body">
+                            <span class="category">Фондовый рынок</span>
+                            <h3>Акции Halyk Bank выросли на 12% после публикации отчёта</h3>
+                            <p>Инвесторы позитивно отреагировали на рекордную прибыль банка.</p>
+                            <a href="#" class="read-more">Читать полностью →</a>
+                        </div>
+                    </div>
+                    <div class="news-card" data-title="Курс доллара" data-category="Валюта" data-image="https://picsum.photos/id/251/680/420">
+                        <img src="https://picsum.photos/id/251/680/420" alt="">
+                        <div class="card-body">
+                            <span class="category">Валюта</span>
+                            <h3>Курс доллара опустился ниже 480 тенге</h3>
+                            <p>Национальный банк продолжает политику укрепления национальной валюты.</p>
+                            <a href="#" class="read-more">Читать полностью →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section-title">Крупные сделки</h2>
+                <div class="news-grid small-grid">
+                    <div class="news-card" data-title="Соглашение Казахстан-Китай" data-category="Инвестиции" data-image="https://picsum.photos/id/1015/680/420">
+                        <img src="https://picsum.photos/id/1015/680/420" alt="">
+                        <div class="card-body">
+                            <span class="category">Инвестиции</span>
+                            <h3>Казахстан и Китай подписали инвестиционное соглашение на $12 млрд</h3>
+                            <p>Средства будут направлены в энергетику и инфраструктуру.</p>
+                            <a href="#" class="read-more">Читать полностью →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+     <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h4>DarkNews</h4>
+                    <p>Независимый новостной портал Казахстана и мира.<br>Честные новости без цензуры.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Разделы</h4>
+                    <a href="world.html">Мир</a>
+                    <a href="business.html">Бизнес</a>
+                    <a href="tech.html">Технологии</a>
+                    <a href="sport.html">Спорт</a>
+                    <a href="politics.html">Политика</a>
+                </div>
+                <div class="footer-column">
+                    <h4>О проекте</h4>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </div>
+                <div class="footer-column">
+                    <h4>Подписка</h4>
+                    <p>Получайте самые важные новости каждое утро</p>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="Ваш email">
+                        <button>Подписаться</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>© 2026 DarkNews Kazakhstan. Все права защищены.</p>
+                    <p>Это демонстрационный проект для портфолио / курсовой работы.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">RSS-лента</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

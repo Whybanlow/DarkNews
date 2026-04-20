@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkNews — Мир</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">DarkNews</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="world.html" class="nav-link active">Мир</a></li>
+                    <li><a href="business.html" class="nav-link">Бизнес</a></li>
+                    <li><a href="tech.html" class="nav-link">Технологии</a></li>
+                    <li><a href="sport.html" class="nav-link">Спорт</a></li>
+                    <li><a href="politics.html" class="nav-link">Политика</a></li>
+                </ul>
+                <input type="text" id="search-input" placeholder="Поиск новостей..." class="search-input">
+            </div>
+        </nav>
+        <div class="breaking-news">
+            <div class="container">
+                <span id="ticker">НАТО начало крупнейшие учения • Китай запустил «Шэньчжоу-19» • США ввели санкции против 12 компаний • Массовые протесты фермеров в Европе</span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <img src="https://picsum.photos/id/1016/1600/900" alt="Главная новость" class="hero-img">
+            <div class="hero-overlay">
+                <div class="hero-category">МИР</div>
+                <h1 class="hero-title">НАТО официально начало крупнейшие военные учения за последние 30 лет</h1>
+                <p class="hero-desc">В операции «Steadfast Defender 2026» участвуют более 90 тысяч военнослужащих из 32 стран. Это самые масштабные учения альянса со времён холодной войны.</p>
+                <a href="#" class="read-more">Читать полностью →</a>
+            </div>
+        </section>
+        <section class="section">
+            <h2 class="section-title">Главные события мира</h2>
+            <div class="news-grid">
+                <div class="news-card" data-title="НАТО начинает крупнейшие учения" data-category="Европа" data-image="https://picsum.photos/id/1016/680/420">
+                    <img src="https://picsum.photos/id/1016/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Европа</span>
+                        <h3>НАТО начинает крупнейшие военные учения за последние 30 лет</h3>
+                        <p>В манёврах принимают участие более 90 тысяч военнослужащих из 32 стран.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Китай запустил Шэньчжоу-19" data-category="Китай" data-image="https://picsum.photos/id/1015/680/420">
+                    <img src="https://picsum.photos/id/1015/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Китай</span>
+                        <h3>Китай успешно запустил пилотируемый корабль «Шэньчжоу-19»</h3>
+                        <p>Три космонавта отправились на орбитальную станцию «Тяньгун».</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Новые санкции США" data-category="США" data-image="https://picsum.photos/id/251/680/420">
+                    <img src="https://picsum.photos/id/251/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">США</span>
+                        <h3>США ввели новые санкции против 12 компаний из России и Китая</h3>
+                        <p>Ограничения касаются технологий двойного назначения.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Протесты фермеров" data-category="Европа" data-image="https://picsum.photos/id/870/680/420">
+                    <img src="https://picsum.photos/id/870/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Европа</span>
+                        <h3>Массовые протесты фермеров охватили Европу</h3>
+                        <p>Фермеры перекрывают автомагистрали в Германии, Франции и Бельгии.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Напряжённость на Ближнем Востоке" data-category="Ближний Восток" data-image="https://picsum.photos/id/201/680/420">
+                    <img src="https://picsum.photos/id/201/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Ближний Восток</span>
+                        <h3>Рост цен на нефть из-за эскалации конфликта на Ближнем Востоке</h3>
+                        <p>Brent превысила отметку $93 за баррель.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+                <div class="news-card" data-title="Выборы в Германии" data-category="Европа" data-image="https://picsum.photos/id/133/680/420">
+                    <img src="https://picsum.photos/id/133/680/420" alt="">
+                    <div class="card-body">
+                        <span class="category">Европа</span>
+                        <h3>В Германии стартовала предвыборная кампания</h3>
+                        <p>Основные партии представили свои программы на предстоящие выборы.</p>
+                        <a href="#" class="read-more">Читать полностью →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+            </section>
+            <section class="section">
+                <h2 class="section-title">Фото дня</h2>
+                <div class="news-grid small-grid">
+                    <div class="news-card">
+                        <img src="https://picsum.photos/id/870/680/420" alt="">
+                        <div class="card-body">
+                            <span class="category">Фото</span>
+                            <h3>Космический старт «Шэньчжоу-19» с космодрома Цзюцюань</h3>
+                            <p>Зрелищные кадры запуска китайского пилотируемого корабля.</p>
+                            <a href="#" class="read-more">Смотреть галерею →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="section">
+            <h2 class="section-title">Мнения экспертов</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="card-body">
+                        <span class="category">Мнение</span>
+                        <h3>«Учения НАТО — это не просто манёвры, а чёткий сигнал Москве и Пекину»</h3>
+                        <p>Политолог Александр Ковалёв о геополитических последствиях учений.</p>
+                        <a href="#" class="read-more">Читать колонку →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-body">
+                        <span class="category">Мнение</span>
+                        <h3>«Китайская космическая программа выходит на новый уровень»</h3>
+                        <p>Эксперт по космосу Ли Вэй о значении запуска «Шэньчжоу-19».</p>
+                        <a href="#" class="read-more">Читать колонку →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+     <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h4>DarkNews</h4>
+                    <p>Независимый новостной портал Казахстана и мира.<br>Честные новости без цензуры.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Разделы</h4>
+                    <a href="world.html">Мир</a>
+                    <a href="business.html">Бизнес</a>
+                    <a href="tech.html">Технологии</a>
+                    <a href="sport.html">Спорт</a>
+                    <a href="politics.html">Политика</a>
+                </div>
+                <div class="footer-column">
+                    <h4>О проекте</h4>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </div>
+                <div class="footer-column">
+                    <h4>Подписка</h4>
+                    <p>Получайте самые важные новости каждое утро</p>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="Ваш email">
+                        <button>Подписаться</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>© 2026 DarkNews Kazakhstan. Все права защищены.</p>
+                    <p>Это демонстрационный проект для портфолио / курсовой работы.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">RSS-лента</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

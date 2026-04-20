@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkNews — Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">DarkNews</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Главная</a></li>
+                    <li><a href="world.html" class="nav-link">Мир</a></li>
+                    <li><a href="business.html" class="nav-link">Бизнес</a></li>
+                    <li><a href="tech.html" class="nav-link">Технологии</a></li>
+                    <li><a href="sport.html" class="nav-link">Спорт</a></li>
+                    <li><a href="politics.html" class="nav-link">Политика</a></li>
+                </ul>
+                <input type="text" id="search-input" placeholder="Поиск новостей..." class="search-input">
+            </div>
+        </nav>
+
+        <div class="breaking-news">
+            <div class="container">
+                <span id="ticker">Казахстан и Китай подписали соглашение на $12 млрд • Цена нефти превысила $93,40 • В Алматы открылся новый IT-технопарк • НАТО проводит крупнейшие учения • Apple представила MacBook Pro M5</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <img src="https://picsum.photos/id/1015/1600/900" alt="Главная новость" class="hero-img">
+            <div class="hero-overlay">
+                <div class="hero-category">МИР • ПОЛИТИКА</div>
+                <h1 class="hero-title">НАТО начинает крупнейшие военные учения за последние 30 лет</h1>
+                <p class="hero-desc">В манёврах примут участие более 90 тысяч военнослужащих из 32 стран. Это самые масштабные учения альянса за последние десятилетия.</p>
+                <a href="#" class="read-more">Читать полностью →</a>
+            </div>
+        </section>
+
+        <div class="main-with-sidebar">
+
+            <div class="main-content">
+                <section class="section">
+                    <h2 class="section-title">Последние новости</h2>
+                    <div class="news-grid">
+
+                        <div class="news-card" data-title="Соглашение с Китаем" data-category="Казахстан" data-image="https://picsum.photos/id/1015/680/420">
+                            <img src="https://picsum.photos/id/1015/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Казахстан</span>
+                                <h3>Казахстан и Китай подписали соглашение на $12 млрд</h3>
+                                <p>Подписано 8 крупных документов в сфере энергетики и инфраструктуры.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card" data-title="Цена нефти" data-category="Экономика" data-image="https://picsum.photos/id/201/680/420">
+                            <img src="https://picsum.photos/id/201/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Экономика</span>
+                                <h3>Цена нефти Brent превысила $93,40 за баррель</h3>
+                                <p>Рост цен вызван напряжённостью на Ближнем Востоке.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card" data-title="IT-технопарк" data-category="Технологии" data-image="https://picsum.photos/id/870/680/420">
+                            <img src="https://picsum.photos/id/870/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Технологии</span>
+                                <h3>В Алматы открылся новый IT-технопарк «Alatau Hub»</h3>
+                                <p>На 45 гектарах разместятся более 300 стартапов.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card" data-title="Учения НАТО" data-category="Мир" data-image="https://picsum.photos/id/1016/680/420">
+                            <img src="https://picsum.photos/id/1016/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Мир</span>
+                                <h3>НАТО начинает крупнейшие учения за 30 лет</h3>
+                                <p>Участвуют более 90 тысяч военнослужащих из 32 стран.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card" data-title="MacBook M5" data-category="Технологии" data-image="https://picsum.photos/id/201/680/420">
+                            <img src="https://picsum.photos/id/201/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Технологии</span>
+                                <h3>Apple представила MacBook Pro с процессором M5</h3>
+                                <p>Новая линейка стала ещё тоньше, мощнее и энергоэффективнее.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+
+                        <div class="news-card" data-title="Курс тенге" data-category="Экономика" data-image="https://picsum.photos/id/870/680/420">
+                            <img src="https://picsum.photos/id/870/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Экономика</span>
+                                <h3>Нацбанк спрогнозировал курс тенге на конец 2026 года</h3>
+                                <p>Ожидается постепенное укрепление национальной валюты.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">В тренде</h3>
+                    <div class="trending">
+                        <div class="trending-item"><a href="#">Казахстан — Китай: $12 млрд соглашение</a></div>
+                        <div class="trending-item"><a href="#">Apple представила MacBook Pro M5</a></div>
+                        <div class="trending-item"><a href="#">Цена нефти выше $93</a></div>
+                        <div class="trending-item"><a href="#">Новый технопарк в Алматы</a></div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Цифры дня</h3>
+                    <div class="facts">
+                        <div class="fact-item">
+                            <strong>$12 млрд</strong>
+                            <span>соглашение с Китаем</span>
+                        </div>
+                        <div class="fact-item">
+                            <strong>$93,40</strong>
+                            <span>цена за баррель Brent</span>
+                        </div>
+                        <div class="fact-item">
+                            <strong>300+</strong>
+                            <span>стартапов в технопарке</span>
+                        </div>
+                        <div class="fact-item">
+                            <strong>90 000</strong>
+                            <span>военнослужащих в учениях НАТО</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget banner-widget">
+                    <div class="ad-banner">
+                        <span class="ad-label">РЕКЛАМА</span>
+                        <img src="https://picsum.photos/id/201/340/180" alt="Реклама" style="width:100%; border-radius:8px; margin:12px 0;">
+                        <p>Новый MacBook Pro M5 уже доступен в Казахстане</p>
+                        <a href="#" class="ad-link">Купить сейчас →</a>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h4>DarkNews</h4>
+                    <p>Независимый новостной портал Казахстана и мира.<br>Честные новости без цензуры.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Разделы</h4>
+                    <a href="world.html">Мир</a>
+                    <a href="business.html">Бизнес</a>
+                    <a href="tech.html">Технологии</a>
+                    <a href="sport.html">Спорт</a>
+                    <a href="politics.html">Политика</a>
+                </div>
+                <div class="footer-column">
+                    <h4>О проекте</h4>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </div>
+                <div class="footer-column">
+                    <h4>Подписка</h4>
+                    <p>Получайте самые важные новости каждое утро</p>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="Ваш email">
+                        <button>Подписаться</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>© 2026 DarkNews Kazakhstan. Все права защищены.</p>
+                    <p>Это демонстрационный проект для портфолио / курсовой работы.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">RSS-лента</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

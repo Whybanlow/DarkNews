@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkNews — Спорт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">DarkNews</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="world.html" class="nav-link">Мир</a></li>
+                    <li><a href="business.html" class="nav-link">Бизнес</a></li>
+                    <li><a href="tech.html" class="nav-link">Технологии</a></li>
+                    <li><a href="sport.html" class="nav-link active">Спорт</a></li>
+                    <li><a href="politics.html" class="nav-link">Политика</a></li>
+                </ul>
+                <input type="text" id="search-input" placeholder="Поиск новостей..." class="search-input">
+            </div>
+        </nav>
+        <div class="breaking-news">
+            <div class="container">
+                <span id="ticker">Головкин возвращается на ринг • Сборная Казахстана победила Узбекистан • ФИФА изменила формат ЧМ-2030 • Рыбакина вышла в финал</span>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="hero sport-hero">
+            <img src="https://picsum.photos/id/1016/1600/900" alt="Спорт" class="hero-img">
+            <div class="hero-overlay">
+                <div class="hero-category">СПОРТ</div>
+                <h1 class="hero-title">Геннадий Головкин возвращается: последний бой в Астане</h1>
+                <p class="hero-desc">Легенда казахстанского бокса официально объявил о возвращении. Прощальный поединок пройдёт в 2026 году на «Астана Арене».</p>
+                <a href="#" class="read-more">Читать полностью →</a>
+            </div>
+        </section>
+        <div class="main-with-sidebar">
+            <div class="main-content">
+                <section class="section">
+                    <h2 class="section-title">Топ событий</h2>
+                    <div class="news-grid">
+                        <div class="news-card" data-title="Головкин возвращается" data-category="Бокс" data-image="https://picsum.photos/id/1016/680/420">
+                            <img src="https://picsum.photos/id/1016/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Бокс</span>
+                                <h3>Геннадий Головкин возвращается на ринг</h3>
+                                <p>Прощальный бой легенды казахстанского бокса пройдёт в Астане в 2026 году.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+                        <div class="news-card" data-title="Победа Казахстана" data-category="Футбол" data-image="https://picsum.photos/id/870/680/420">
+                            <img src="https://picsum.photos/id/870/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Футбол</span>
+                                <h3>Сборная Казахстана победила Узбекистан</h3>
+                                <p>Важная победа в отборочном турнире Кубка Азии 2027 года.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+                        <div class="news-card" data-title="Рыбакина в финале" data-category="Теннис" data-image="https://picsum.photos/id/133/680/420">
+                            <img src="https://picsum.photos/id/133/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Теннис</span>
+                                <h3>Елена Рыбакина вышла в финал престижного турнира</h3>
+                                <p>Казахстанская теннисистка продолжает успешный сезон.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+                        <div class="news-card" data-title="ФИФА новый формат" data-category="Футбол" data-image="https://picsum.photos/id/251/680/420">
+                            <img src="https://picsum.photos/id/251/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Футбол</span>
+                                <h3>ФИФА официально утвердила новый формат ЧМ-2030</h3>
+                                <p>В турнире примут участие 48 команд.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section">
+                    <h2 class="section-title">Другие виды спорта</h2>
+                    <div class="news-grid">
+                        <div class="news-card" data-title="КХЛ" data-category="Хоккей" data-image="https://picsum.photos/id/201/680/420">
+                            <img src="https://picsum.photos/id/201/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Хоккей</span>
+                                <h3>«Барыс» одержал яркую победу в КХЛ</h3>
+                                <p>Казахстанская команда показала отличный хоккей.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+                        <div class="news-card" data-title="Велоспорт" data-category="Велоспорт" data-image="https://picsum.photos/id/870/680/420">
+                            <img src="https://picsum.photos/id/870/680/420" alt="">
+                            <div class="card-body">
+                                <span class="category">Велоспорт</span>
+                                <h3>Казахстанский велогонщик выиграл этап «Вуэльты Испании»</h3>
+                                <p>Успешное выступление на одной из самых престижных велогонок.</p>
+                                <a href="#" class="read-more">Читать полностью →</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Турнирная таблица</h3>
+                    <div class="league-table">
+                        <div class="table-row"><span>1. Манчестер Сити</span><strong>68</strong></div>
+                        <div class="table-row"><span>2. Арсенал</span><strong>65</strong></div>
+                        <div class="table-row"><span>3. Ливерпуль</span><strong>63</strong></div>
+                        <div class="table-row highlight"><span>8. Кайрат</span><strong>42</strong></div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Live матчи</h3>
+                    <div class="live-matches">
+                        <div class="live-match">
+                            <span>Барыс — Авангард</span>
+                            <span class="live-score">3 : 2</span>
+                        </div>
+                        <div class="live-match">
+                            <span>Рыбакина — Свёнтек</span>
+                            <span class="live-score">6 : 4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget banner-widget">
+                    <div class="ad-banner">
+                        <span class="ad-label">СПОНСОР</span>
+                        <p>Смотри все матчи на KAZSPORT</p>
+                        <a href="#" class="ad-link">Подключить подписку</a>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Казахстан в мире спорта</h3>
+                    <div class="popular">
+                        <div class="popular-item"><a href="#">Головкин — последний бой</a></div>
+                        <div class="popular-item"><a href="#">Рыбакина в топ-10 WTA</a></div>
+                        <div class="popular-item"><a href="#">«Барыс» в плей-офф КХЛ</a></div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+     <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h4>DarkNews</h4>
+                    <p>Независимый новостной портал Казахстана и мира.<br>Честные новости без цензуры.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Разделы</h4>
+                    <a href="world.html">Мир</a>
+                    <a href="business.html">Бизнес</a>
+                    <a href="tech.html">Технологии</a>
+                    <a href="sport.html">Спорт</a>
+                    <a href="politics.html">Политика</a>
+                </div>
+                <div class="footer-column">
+                    <h4>О проекте</h4>
+                    <li><a href="about.html" class="nav-link">О нас</a></li>
+                    <li><a href="contacts.html" class="nav-link">Контакты</a></li>
+                </div>
+                <div class="footer-column">
+                    <h4>Подписка</h4>
+                    <p>Получайте самые важные новости каждое утро</p>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="Ваш email">
+                        <button>Подписаться</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>© 2026 DarkNews Kazakhstan. Все права защищены.</p>
+                    <p>Это демонстрационный проект для портфолио / курсовой работы.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">RSS-лента</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
