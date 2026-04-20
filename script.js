@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log("%cDarkNews — базовый понятный JS загружен", "color: #e30613; font-weight: bold;");
 
-    // ====================== 1. АКТИВНАЯ ССЫЛКА В МЕНЮ ======================
+    
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('.nav-link').forEach(link => {
         if (link.getAttribute('href') === currentPage) {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ====================== 2. ПЛАВНОЕ ПОЯВЛЕНИЕ КАРТОЧЕК ======================
+ 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
@@ -24,17 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.15 
     });
 
-    // Применяем наблюдатель ко всем карточкам
+
     document.querySelectorAll('.news-card').forEach(card => {
         observer.observe(card);
     });
 
-    // ====================== 3. ПЕРЕХОД НА ПОЛНУЮ СТАТЬЮ ======================
+    
     document.addEventListener('click', (e) => {
         const card = e.target.closest('.news-card');
         
         if (card) {
-            // Если кликнули именно на кнопку "Читать полностью" — ничего не делаем здесь
+          
             if (e.target.closest('.read-more')) {
                 return;
             }
@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ====================== 4. RIPPLE ЭФФЕКТ ======================
-    document.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
         const btn = e.target.closest('.read-more');
         if (btn) {
             const ripple = document.createElement('span');
@@ -66,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ====================== 5. ЖИВОЙ ПОИСК ======================
+    
     const searchInput = document.getElementById('search-input');
     if (searchInput) {
         searchInput.addEventListener('input', () => {
@@ -82,14 +81,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ====================== 6. БЕСКОНЕЧНЫЙ ТИКЕР ======================
+    
     const ticker = document.getElementById('ticker');
     if (ticker) {
         const originalText = ticker.innerHTML;
         ticker.innerHTML = originalText + " &nbsp;&nbsp;&nbsp;••&nbsp;&nbsp;&nbsp; " + originalText;
     }
 
-    // ====================== 7. КНОПКА ИЗБРАННОГО (★) ======================
+    
     const favoritesKey = 'darknews_favorites';
 
     function saveToFavorites(card) {
@@ -110,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Добавляем кнопку ★ на каждую карточку
+
     document.querySelectorAll('.news-card').forEach(card => {
         const favBtn = document.createElement('button');
         favBtn.textContent = '★';
@@ -138,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.appendChild(favBtn);
     });
 
-    // ====================== 8. ПЛАВНЫЙ СКРОЛЛ ======================
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const target = document.querySelector(this.getAttribute('href'));
